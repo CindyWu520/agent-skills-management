@@ -1,6 +1,4 @@
-import { Timestamp } from "next/dist/server/lib/cache-handlers/types"
-
-type skills = {
+export type Skill = {
     id: string,
     name : string,
     description: string,
@@ -9,7 +7,7 @@ type skills = {
     updatedAt: string
 }
 
-export const SKILLS : skills[] = [
+export const SKILLS : Skill[] = [
     {
         id: "1",
         name : "Skill 1",
